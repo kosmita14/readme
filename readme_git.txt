@@ -6,5 +6,6 @@ git status
 
 
 git fetch / git fetch --all
+git diff origin
 git pull
 
