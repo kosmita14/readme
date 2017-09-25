@@ -3,3 +3,8 @@ git add *
 git commit
 git push
 git status
+
+
+git feach
+git pull
+
