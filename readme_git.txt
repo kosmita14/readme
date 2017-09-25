@@ -5,6 +5,6 @@ git push
 git status
 
 
-git feach / git feach --all
+git fetch / git fetch --all
 git pull
 
