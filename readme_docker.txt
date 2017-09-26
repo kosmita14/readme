@@ -12,3 +12,9 @@ sudo docker run -d -p 24224:24224 -p 24224:24224/udp --link myelastic:localhost 
 docker run -d --rm -p 15672:15672 -p 5672:5672 --name some-rabbit --hostname localhost rabbitmq:management
 docker run --rm -d --link some-rabbit --link myelastic:localhost mylogstash:latest
 docker build -t mylogstash:latest ./
+
+
+
+docker-compose up -d --scale some-logstash=10
+docker-compose down
+
