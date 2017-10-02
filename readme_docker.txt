@@ -1,12 +1,11 @@
 /etc/docker/daemon.json
 {
+    "graph": "/media/pi/ext250/docker_data",
     "log-driver": "fluentd",
     "log-opts": {
         "fluentd-async-connect": "true"
      }
 }
-
-
 
 sudo docker run -d -p 6379:6379 -v /media/pi/ext250/redisdata:/data redis
 sudo docker run -d -p 1880:1880 -v /media/pi/ext250/nodered_data:/data mynodered
