@@ -1,4 +1,7 @@
+
 #run influxdb CLI:
+docker exec -it influxdb influx
+
 influx -format=column
 influx -format=csv
 influx -format=json
